@@ -1,0 +1,45 @@
+.pageWrapper {
+  width: 100%;
+  height: var(--content-height);
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.small {
+  padding-top: 12px;
+}
+
+.normal {
+  padding-top: 24px;
+}
+
+.big {
+  padding-top: 36px;
+}
+
+.hCentered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vCentered {
+  display: flex;
+  align-items: center;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+// определиться с адаптивом и вынести в глобальные переменные
+
+@media screen and (width <= 767px) {
+  .normal {
+    padding-top: 17px;
+  }
+
+  .big {
+    padding-top: 24px;
+  }
+}

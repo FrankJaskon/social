@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "@it-incubator/eslint-config",
+    "plugin:storybook/recommended"
+  ],
+  "overrides": [
+    {
+      "files": ["*.stories.tsx"],
+      "rules": {
+        "react-hooks/rules-of-hooks": "off"
+      }
+    }
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "warn"
+  }
+}

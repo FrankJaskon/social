@@ -1,0 +1,118 @@
+@mixin typography-mixin($fS, $lH, $fW) {
+  font-family: var(--font-family-text);
+  font-size: $fS;
+  font-weight: $fW;
+  line-height: $lH;
+  white-space: pre-line;
+}
+
+@mixin link {
+  color: var(--primary-500);
+  text-decoration-line: underline;
+}
+
+.h1 {
+  @include typography-mixin(var(--font-size-xl), var(--font-line-l), var(--weight-bold));
+}
+
+.h2 {
+  @include typography-mixin(var(--font-size-l), var(--font-line-m), var(--weight-bold));
+}
+
+.h3 {
+  @include typography-mixin(var(--font-size-m), var(--font-line-m), var(--weight-semibold));
+}
+
+.large {
+  @include typography-mixin(var(--font-size-xxl), var(--font-line-l), var(--weight-bold));
+}
+
+.regular_16 {
+  @include typography-mixin(var(--font-size-m), var(--font-line-m), var(--weight-regular));
+}
+
+.regular_14 {
+  @include typography-mixin(var(--font-size-s), var(--font-line-m), var(--weight-regular));
+}
+
+.bold_16 {
+  @include typography-mixin(var(--font-size-m), var(--font-line-m), var(--weight-bold));
+}
+
+.medium_14 {
+  @include typography-mixin(var(--font-size-s), var(--font-line-m), var(--weight-medium));
+}
+
+.small_text {
+  @include typography-mixin(var(--font-size-xs), 14px, var(--weight-regular));
+}
+
+.semi-bold-small {
+  @include typography-mixin(var(--font-size-xs), var(--font-line-xs), var(--weight-semibold));
+}
+
+.bold_14 {
+  @include typography-mixin(var(--font-size-xs), var(--font-line-m), var(--weight-bold));
+}
+
+.link1 {
+  @include typography-mixin(var(--font-size-s), var(--font-line-m), var(--weight-regular));
+  @include link;
+}
+
+.link2 {
+  @include typography-mixin(var(--font-size-xs), 16px, var(--weight-regular));
+  @include link;
+}
+
+.inherit {
+  color: inherit;
+}
+
+.primary {
+  color: var(--primary-500);
+}
+
+.secondary {
+  color: var(--light-100);
+}
+
+.error {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--danger-500);
+}
+
+.tip {
+  color: var(--light-900);
+}
+
+.alignStart {
+  text-align: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignEnd {
+  text-align: right;
+}
+
+.alignJustify {
+  text-align: justify;
+}
+
+// MEDIA REQUESTS
+
+@media (hover: hover) {
+  .link {
+    transition: color 0.2s linear;
+  }
+
+  .hovered {
+    &:hover {
+      color: var(--primary-100);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.flexWrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-size: var(--font-size-s);
+  text-decoration: none;
+}
+
+.active {
+  font-weight: var(--font-weight-bold);
+  color: var(--accent-color);
+}

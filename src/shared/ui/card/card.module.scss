@@ -1,0 +1,106 @@
+.card {
+  min-width: 300px;
+}
+
+.primary,
+.notification {
+  padding: 24px;
+
+  color: var(--light-100);
+
+  background-color: var(--dark-500);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.notification {
+  position: relative;
+  border-radius: var(--border-radius-big);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -16.5px;
+    right: 16px;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    border: 0 solid transparent;
+    border-right-width: 16px;
+    border-bottom: 16px solid var(--dark-100);
+    border-left-width: 16px;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: calc(-16.5px + 1px);
+    right: 12px;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    border: 0 solid transparent;
+    border-right-width: 20px;
+    border-bottom: 20px solid var(--dark-300);
+    border-left-width: 20px;
+  }
+}
+
+.start {
+  text-align: left;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.end {
+  text-align: right;
+}
+
+.full {
+  width: 100%;
+}
+
+.small {
+  width: 100%;
+  max-width: 378px;
+}
+
+.medium {
+  width: 100%;
+  max-width: 492px;
+}
+
+.big {
+  width: 100%;
+  max-width: 644px;
+}
+
+.huge {
+  width: 100%;
+  max-width: 958px;
+}
+
+.pBottomSmall {
+  padding-bottom: 12px;
+}
+
+.pBottomMedium {
+  padding-bottom: 24px;
+}
+
+.pBottomBig {
+  padding-bottom: 36px;
+}

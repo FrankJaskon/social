@@ -1,0 +1,11 @@
+.loaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--content-height);
+}
+
+.loader {
+  position: relative;
+  top: -42px;
+}

@@ -1,0 +1,31 @@
+.sidebar {
+  position: sticky;
+  top: var(--header-footer-height);
+
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 104px;
+
+  width: var(--sidebar-width);
+  height: var(--content-height);
+  padding: 75px 16px 0 63px;
+
+  color: var(--light-100);
+
+  background-color: var(--dark-900);
+  border-right: var(--border);
+}
+
+.sidebarFooter {
+  position: absolute;
+  bottom: 36px;
+}
+
+// MEDIA REQUESTS
+
+@media screen and (width <= 767px) {
+  .sidebar {
+    display: none;
+  }
+}

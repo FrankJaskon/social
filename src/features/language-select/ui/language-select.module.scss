@@ -1,0 +1,16 @@
+.languageSelect {
+  width: 165px;
+  color: var(--dark-500);
+}
+
+.trigger {
+  width: 100%;
+}
+
+// MEDIA REQUESTS
+
+@media screen and (width <= 767px) {
+  .languageSelect {
+    width: 42px;
+  }
+}

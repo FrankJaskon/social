@@ -1,0 +1,22 @@
+.flexWrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-size: var(--font-size-s);
+  text-decoration: none;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+}
+
+.modalButton {
+  width: 96px;
+}
+
+.test {
+  z-index: 100000000000000 !important;
+}

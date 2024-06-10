@@ -1,0 +1,36 @@
+.text {
+  // blank
+}
+
+.item {
+  all: unset;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  color: #0d0b0c;
+
+  border-radius: 2px;
+
+  &:focus-visible {
+    outline: 2px solid var(--primary-700);
+  }
+
+  &:disabled {
+    cursor: initial;
+    opacity: 1;
+  }
+
+  &.selected {
+    // blank
+  }
+
+  &:hover:not(&:disabled) {
+    // blank
+  }
+}

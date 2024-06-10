@@ -1,0 +1,14 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  height: var(--header-footer-height);
+  border-top: var(--border);
+}
+
+// MEDIA REQUESTS
+
+@media screen and (width >= 767px) {
+  .footer {
+    display: none;
+  }
+}

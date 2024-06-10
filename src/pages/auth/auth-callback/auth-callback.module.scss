@@ -1,0 +1,6 @@
+.fullHeightWindow {
+  position: absolute;
+  z-index: var(--modal-z-index);
+  inset: 0;
+  background-color: var(--dark-900);
+}

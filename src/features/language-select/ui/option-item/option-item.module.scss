@@ -1,0 +1,16 @@
+.flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  margin-left: 12px;
+}
+
+// MEDIA REQUESTS
+
+@media screen and (width <= 767px) {
+  .label {
+    display: none;
+  }
+}

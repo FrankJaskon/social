@@ -1,0 +1,30 @@
+.title,
+.backButton {
+  margin-bottom: 24px;
+}
+
+.backButton {
+  gap: 8px;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.buttonIcon {
+  color: var(--light-100);
+}
+
+// MEDIA REQUESTS
+
+@media (hover: hover) {
+  .buttonIcon {
+    transition: color 0.2s linear;
+  }
+
+  .backButton {
+    &:hover {
+      .buttonIcon {
+        color: var(--primary-100);
+      }
+    }
+  }
+}
